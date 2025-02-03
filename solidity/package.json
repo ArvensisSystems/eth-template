@@ -1,0 +1,12 @@
+{
+  "name": "@arvensis-systems/solidity",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "solady": "^0.1.3"
+  }
+}
