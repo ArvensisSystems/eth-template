@@ -1,11 +1,26 @@
 {
   "name": "@arvensis-systems/template",
-  "module": "index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
+  "private": true,
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter next dev",
+    "test": "cd solidity && pnpm test",
+    "chain": "cd solidity && pnpm chain",
+    "start": "cd next && pnpm start",
+    "sol:deploy": "cd solidity && pnpm run deploy",
+    "sol:build": "cd solidity && pnpm run build",
+    "next:build": "cd next && pnpm run build",
+    "serve": "cd next && pnpm serve",
+    "types": "cd solidity && pnpm types"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.3",
+    "abitype": "^1.0.8",
+    "type-fest": "^4.37.0"
+  },
+  "devDependencies": {
+    "@wagmi/cli": "^2.2.0"
   }
 }
